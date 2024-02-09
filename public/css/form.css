@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+input {
+  display: block;
+}
+.anchor {
+  display: block;
+}
+li {
+  list-style: none;
+}

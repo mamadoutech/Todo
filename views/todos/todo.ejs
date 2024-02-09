@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <title>pageTitle</title>
+  </head>
+  <body>
+    <p><%=todo._id%></p>
+    <p><%=todo.text%></p>
+    <p><%=todo.done%></p>
+    <a href="/todos/<%=todo._id%>/edit">edit</a>
+    <a class="anchor" href="/todos">back</a>
+  </body>
+</html>

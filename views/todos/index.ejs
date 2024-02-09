@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <title><%= pageTitle %></title>
+  </head>
+  <body>
+    <div class="from">
+      <h1>List of the todos</h1>
+      <% for(let todo of todos){ %>
+      <li>
+        <form action="/todos/<%=todo._id%>?_method=delete" method="POST">
+          <button>❌</button>
+          <a href="/todos/<%=todo._id%>"><%= todo.text %> - <%= todo.done %></a>
+        </form>
+      </li>
+      <% }%>
+    </div>
+
+    <a href="/">back</a>
+  </body>
+</html>
